@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" >
+        <layer-list>
+            <item android:drawable="@color/menuGray" />
+            <item android:drawable="@color/menuLine" android:left="58dp" />
+            <item android:drawable="@color/menuGray" android:bottom="1dp" />
+        </layer-list>
+    </item>
+    <item android:drawable="@color/menuPress" android:state_pressed="true">
+        <layer-list>
+            <item android:left="10dp"
+                android:drawable="@drawable/ic_menu_add"></item>
+        </layer-list>
+
+    </item>
+</selector>

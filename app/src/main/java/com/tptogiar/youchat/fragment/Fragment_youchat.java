@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.tptogiar.youchat.R;
 
@@ -17,10 +18,6 @@ import com.tptogiar.youchat.R;
  * create an instance of this fragment.
  */
 public class Fragment_youchat extends Fragment {
-
-    RecyclerView chattingList=null;
-
-
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER

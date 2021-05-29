@@ -34,7 +34,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
             android:layout_alignTop="@id/contact_text"
-            android:background="@drawable/bg_add"
+            android:background="@mipmap/ic_add"
             />
         <Button
             android:layout_width="25dp"

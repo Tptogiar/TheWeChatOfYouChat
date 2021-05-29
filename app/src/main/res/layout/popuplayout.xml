@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+<!--发起群聊-->
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:background="@drawable/bg_menu"
+        >
+
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_menu_chat"
+            tools:srcCompat="@tools:sample/avatars"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chat"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@+id/chat"
+            android:textStyle="bold"
+            android:text="发起群聊" />
+    </RelativeLayout>
+<!--    添加好友-->
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:background="@drawable/bg_menu"
+        >
+
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_menu_add"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/add"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@+id/add"
+            android:textStyle="bold"
+            android:text="添加朋友" />
+    </RelativeLayout>
+<!--    扫一扫-->
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:background="@drawable/bg_menu"
+        >
+
+
+        <ImageView
+            android:id="@+id/scan"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_menu_scan"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scan"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@+id/scan"
+            android:textStyle="bold"
+            android:text="扫一扫" />
+    </RelativeLayout>
+<!--    收付款-->
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:background="@drawable/bg_menu"
+        >
+
+
+        <ImageView
+            android:id="@+id/pay"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_menu_pay"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/pay"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@+id/pay"
+            android:textStyle="bold"
+            android:text="收付款" />
+    </RelativeLayout>
+<!--    帮助与反馈-->
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:background="@drawable/bg_menu"
+        >
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/ic_menu_help"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/help"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignTop="@+id/help"
+            android:textStyle="bold"
+            android:text="帮助与反馈" />
+    </RelativeLayout>
+</LinearLayout>
