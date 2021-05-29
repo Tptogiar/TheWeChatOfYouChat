@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainActivity"
+    >
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/myViewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="765dp">
+
+    </androidx.viewpager2.widget.ViewPager2>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/myViewPager2"
+        android:background="@drawable/bg_bottom"
+        >
+        <!--微信-->
+        <RelativeLayout
+            android:id="@+id/bottom_youchat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/bottom_youchat_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_youchat_select"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottom_youchat_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/bg_text_color"
+                android:text="微信" />
+        </RelativeLayout>
+<!--        联系人-->
+        <RelativeLayout
+            android:id="@+id/bottom_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/bottom_contact_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_contact_select"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottom_contact_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/bg_text_color"
+                android:text="联系人" />
+        </RelativeLayout>
+<!--        发现-->
+        <RelativeLayout
+            android:id="@+id/bottom_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/bottom_find_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_find_select"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottom_find_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/bg_text_color"
+                android:text="发现" />
+        </RelativeLayout>
+<!--        我-->
+        <RelativeLayout
+            android:id="@+id/bottom_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:id="@+id/bottom_me_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_me_select"
+                >
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottom_me_image"
+                android:layout_centerHorizontal="true"
+                android:textColor="@drawable/bg_text_color"
+                android:text="我" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".fragment.Fragment_me"
+    android:background="@color/white"
+    android:id="@+id/fragment_contact"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--      通讯录  -->
+    <RelativeLayout
+        android:id="@+id/top_contact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#E9E9E9"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="通讯录"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignTop="@id/contact_text"
+            android:background="@drawable/bg_youchat_add"
+            />
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignTop="@id/contact_text"
+            android:layout_toLeftOf="@id/btn_add"
+            android:background="@drawable/bg_youchat_search"
+
+            >
+        </Button>
+    </RelativeLayout>
+    <!--  新的朋友  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_new_friend"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_new_friend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_new_friend"
+            android:text="新的朋友"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#E9E9E9"
+     />
+    <!--    仅聊天的朋友-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_only_chat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_only_chat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_only_chat"
+            android:text="仅聊天的朋友"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#E9E9E9" />
+    <!--  群聊 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_chat_group"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_chat_group" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_chat_group"
+            android:text="群聊"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#E9E9E9" />
+    <!--  标签  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_label"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_label"
+            android:text="标签"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="65dp"
+        android:background="#E9E9E9" />
+    <!-- 公众号  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_offical_account"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_offiical_account" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_offical_account"
+            android:text="公众号"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+
+    <TextView android:text="我的企业及企业联系人"
+        android:textColor="#FF767676"
+        android:layout_height="32dp"
+        android:layout_width="match_parent"
+        android:background="#E9E9E9"
+        android:paddingLeft="20dp"
+        android:textSize="12dp"
+        android:paddingTop="9dp"
+        ></TextView>    <!--  企业微信联系人  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:clickable="true"
+        android:background="@drawable/bg_all"
+        >
+
+        <ImageView
+            android:id="@+id/contact_enterprise_youchat"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_enterprise_youchat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/contact_enterprise_youchat"
+            android:text="企业微信联系人"
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/thickLine2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#E9E9E9" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E9E9E9"></View>
+</LinearLayout>

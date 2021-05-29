@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Fragment_me"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_me"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_profile_photo"/>
+
+        <TextView
+            android:id="@+id/profielName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/profilePhoto"
+            android:text="profileName"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profielName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/profilePhoto"
+            android:text="微信号：xiao2528891112"
+
+            />
+
+
+        <Button
+            android:id="@+id/profileStatus"
+            android:layout_width="10mm"
+            android:layout_height="30dp"
+            android:layout_below="@id/profilePhoto"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/bg_btn_status"
+            android:text="+ 状态"
+            android:textColor="#474242"
+
+            />
+
+        <Button
+            android:id="@+id/profileStatusMore"
+            android:layout_width="13pt"
+            android:layout_height="13pt"
+            android:layout_below="@id/profilePhoto"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/profileStatus"
+            android:background="@drawable/bg_btn_status_more"
+            android:text="···"
+            android:textColor="#474242"
+            android:textSize="5pt"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/profileStatus"
+            android:layout_below="@id/profielName"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/bg_code" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/thickLine1"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E9E9E9"/>
+
+        <!--    支付    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+
+
+            <ImageView
+                android:id="@+id/pay_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_youchat_pay" />
+
+            <TextView
+                android:id="@+id/pay_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pay_Icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:text="支付"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/pay_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/arrows"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/thickLine2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E9E9E9"/>
+        <!--    收藏    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+
+
+            <ImageView
+                android:id="@+id/favorite_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_favorite" />
+
+            <TextView
+                android:id="@+id/favorite_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/favorite_Icon"
+                android:text="收藏"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/favorite_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrows" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/thinLine1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E9E9E9"
+            android:layout_marginLeft="65dp" />
+        <!--    朋友圈    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+
+
+            <ImageView
+                android:id="@+id/moments_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_moments" />
+
+            <TextView
+                android:id="@+id/moments_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/moments_Icon"
+                android:text="朋友圈"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/moments_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrows" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/thinLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#E9E9E9" />
+        <!--    卡包   -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+            <ImageView
+                android:id="@+id/card_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_card" />
+
+            <TextView
+                android:id="@+id/card_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/card_Icon"
+                android:text="卡包"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/card_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrows" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/thinLine3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="65dp"
+            android:background="#E9E9E9" />
+        <!--    表情   -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+
+
+            <ImageView
+                android:id="@+id/emjio_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_emjio" />
+
+            <TextView
+                android:id="@+id/emjio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/emjio_Icon"
+                android:text="表情"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/emjio_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrows" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/thickLine3"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:background="#E9E9E9"/>
+        <!--    设置    -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:clickable="true"
+            android:background="@drawable/bg_all"
+            >
+
+
+            <ImageView
+                android:id="@+id/setting_Icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_setting" />
+
+            <TextView
+                android:id="@+id/setting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/setting_Icon"
+                android:text="设置"
+                android:textColor="@color/black"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/setting_arrows"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrows" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/thickBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"/>
+    </LinearLayout>
+
+
+</LinearLayout>
