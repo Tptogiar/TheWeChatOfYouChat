@@ -3,6 +3,7 @@ package com.tptogiar.youchat.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,10 @@ import com.tptogiar.youchat.R;
  * create an instance of this fragment.
  */
 public class Fragment_youchat extends Fragment {
+
+    RecyclerView chattingList=null;
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -63,4 +68,10 @@ public class Fragment_youchat extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_youchat, container, false);
     }
+
+
+
+
+
+
 }

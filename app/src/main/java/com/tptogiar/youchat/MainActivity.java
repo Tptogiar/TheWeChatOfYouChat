@@ -1,13 +1,12 @@
 package com.tptogiar.youchat;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
@@ -15,6 +14,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
+import com.tptogiar.youchat.adapter.ContactListAdapter;
+import com.tptogiar.youchat.adapter.FragmentAtapter;
+import com.tptogiar.youchat.adapter.ChattingListAdapter;
 import com.tptogiar.youchat.fragment.Fragment_contact;
 import com.tptogiar.youchat.fragment.Fragment_find;
 import com.tptogiar.youchat.fragment.Fragment_me;
@@ -24,13 +26,16 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    RelativeLayout bottom_youchat,bottom_contact,bottom_find,bottom_me;
+    //用来记录当前选择了底部的哪一个标签
     RelativeLayout curSelect;
+    //用来记录四个fragment
+    ArrayList<Fragment> fragments=new ArrayList<>();
+    ArrayList<User> users=new ArrayList<>();
+    RelativeLayout bottom_youchat,bottom_contact,bottom_find,bottom_me;
     ViewPager2 mainViewPager =null;
     RelativeLayout mainActivity=null;
-
-    ArrayList<Fragment> fragments=new ArrayList<>();
-
+    RecyclerView youchatRecycle =null;
+    RecyclerView contactRecycle=null;
 
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -43,20 +48,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             getWindow().setStatusBarColor(Color.TRANSPARENT);
         }
         setContentView(R.layout.activity_main);
+
         init();
-
-
     }
 
-    @SuppressLint("WrongViewCast")
+
     private void init() {
         fragments.add(new Fragment_youchat());
         fragments.add(new Fragment_contact());
         fragments.add(new Fragment_find());
         fragments.add(new Fragment_me());
-        for (int i = 0; i < fragments.size(); i++) {
-            System.out.println("xxxx  "+fragments.get(i));
-        }
+        users.add(new User("鹦鹉兄弟",R.mipmap.ic_avatars_duck,"鲁迅说少喝奶茶，多喝狂犬水"));
+        users.add(new User("鲁迅",R.mipmap.ic_avatars_luxun,"这话我没说过"));
+        users.add(new User("不是你的微信好友",R.mipmap.ic_avatars_young_man,"请签收你的月亮"));
+        users.add(new User("我的电脑",R.mipmap.ic_avatars_computer,"你压到我腿毛了"));
+        users.add(new User("5:00am",R.mipmap.ic_avatars_dog1,"天气热了，我不再是单身狗了，我是热狗"));
+        users.add(new User("隐形的鸡翅膀",R.mipmap.ic_avatars_duck4,"..."));
+        users.add(new User("唐曾",R.mipmap.ic_avatars_young_man2,"徒儿前面是火焰山吗？"));
+        users.add(new User("老孙",R.mipmap.ic_avatars_young_man3,"不，前面是广东"));
+        users.add(new User("加里敦大学学生",R.mipmap.ic_avatars_dog2,"身价一直没公布，因为最近不稳定，有时梦不到"));
+        users.add(new User("白雪公主后妈",R.mipmap.ic_avatars_gril1,""));
+        users.add(new User("香蕉不呐呐",R.mipmap.ic_avatars_duck5,"想做个园丁 然后去你们心里种点b树"));
+
         bottom_youchat=(RelativeLayout) findViewById(R.id.bottom_youchat);
         bottom_youchat.setOnClickListener(this);
         bottom_contact=(RelativeLayout) findViewById(R.id.bottom_contact);
@@ -65,42 +78,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bottom_find.setOnClickListener(this);
         bottom_me=(RelativeLayout) findViewById(R.id.bottom_me);
         bottom_me.setOnClickListener(this);
-        bottom_youchat.setSelected(true);
 
         mainActivity = (RelativeLayout) findViewById(R.id.mainActivity);
-        mainViewPager =findViewById(R.id.myViewPager2);
+        mainViewPager =(ViewPager2) findViewById(R.id.myViewPager2);
+
+        bottom_youchat.setSelected(true);
+
         //设置左右预加载的个数为：3，这样可以避免用户刚打开时
         // 就立即点"我"分页而造成空指针异常，
         // 当然在changePager中fragments.get(position).getView()获
         //取view后判断一下是不是空指针，是的话return也可以实现同样效果
         mainViewPager.setOffscreenPageLimit(3);
 
-
-
         curSelect=bottom_youchat;
 
-
-        mainViewPager.setAdapter(new FragmentStateAdapter(this) {
-            @NonNull
-            @Override
-            public Fragment createFragment(int position) {
-                return fragments.get(position);
-            }
-            @Override
-            public int getItemCount() {
-                return fragments.size();
-            }
-        });
-
+        //给viewPager设置适配器
+        FragmentAtapter fragmentAtapter = new FragmentAtapter(this, fragments);
+        mainViewPager.setAdapter(fragmentAtapter);
         mainViewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 changePager(position);
+                //此时的fragment已经onCreate了，所以在此处getView以及setAdapter
+                setAdapter();
+
             }
         });
 
+    }
 
+    private void setAdapter() {
+        View youchat_view = fragments.get(0).getView();
+        youchatRecycle =youchat_view.findViewById(R.id.chattingList);
+        youchatRecycle.setLayoutManager(new LinearLayoutManager(this));
+        youchatRecycle.setAdapter(new ChattingListAdapter(this,users));
+
+        View contact_view = fragments.get(1).getView();
+        contactRecycle=contact_view.findViewById(R.id.contactList);
+        contactRecycle.setLayoutManager(new LinearLayoutManager(this));
+        contactRecycle.setAdapter(new ContactListAdapter(this,users));
     }
 
 
@@ -174,5 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //将主mainActivity的背景颜色设置为当前Fragment顶部的颜色，
         //以实现状态栏和fragment一体的效果
         mainActivity.setBackgroundColor(color);
+
+
     }
 }

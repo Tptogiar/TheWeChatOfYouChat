@@ -32,7 +32,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
             android:layout_alignTop="@id/find_text"
-            android:background="@drawable/bg_youchat_add"
+            android:background="@drawable/bg_add"
             />
         <Button
             android:layout_width="25dp"
@@ -40,7 +40,7 @@
             android:layout_marginRight="15dp"
             android:layout_alignTop="@id/find_text"
             android:layout_toLeftOf="@id/btn_add"
-            android:background="@drawable/bg_youchat_search"
+            android:background="@drawable/bg_search"
 
             >
         </Button>
@@ -60,7 +60,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_moments" />
+            android:background="@drawable/ic_find_moments" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -101,7 +101,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_scan" />
+            android:background="@drawable/ic_find_scan" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -120,7 +120,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
 
@@ -142,7 +142,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_shake" />
+            android:background="@drawable/ic_find_shake" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -161,7 +161,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -182,7 +182,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_look" />
+            android:background="@drawable/ic_find_look" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -201,7 +201,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -222,7 +222,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_search" />
+            android:background="@drawable/ic_find_search" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -241,7 +241,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -262,7 +262,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_near" />
+            android:background="@drawable/ic_find_near_live" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -281,7 +281,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -302,7 +302,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_shop" />
+            android:background="@drawable/ic_find_shop" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -321,7 +321,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -342,7 +342,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_game" />
+            android:background="@drawable/ic_find_game" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -361,7 +361,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View
@@ -382,7 +382,7 @@
             android:layout_height="25dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="14dp"
-            android:background="@drawable/bg_find_applet" />
+            android:background="@drawable/ic_find_applet" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -401,7 +401,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/arrows" />
+            android:src="@drawable/bg_arrow" />
 
     </RelativeLayout>
     <View

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    可变底部(不偏移）-->
+    <item >
+        <selector>
+            <item
+                android:drawable="@color/white"
+                android:state_pressed="false" />
+            <item
+                android:drawable="@color/gray"
+                android:state_pressed="true" />
+        </selector>
+    </item>
+<!--    灰色中间层，向右偏移-->
+    <item android:left="77dp" android:drawable="@color/gray" />
+<!--    顶层，向上偏移-->
+    <item android:bottom="1px">
+        <selector>
+            <item
+                android:drawable="@color/white"
+                android:state_pressed="false" />
+            <item
+                android:drawable="@color/gray"
+                android:state_pressed="true" />
+        </selector>
+    </item>
+
+</layer-list>

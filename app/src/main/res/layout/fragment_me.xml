@@ -121,7 +121,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_youchat_pay" />
+                android:background="@drawable/ic_me_pay" />
 
             <TextView
                 android:id="@+id/pay_text"
@@ -141,7 +141,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/arrows"
+                android:src="@drawable/bg_arrow"
                 android:layout_alignParentRight="true" />
 
         </RelativeLayout>
@@ -165,7 +165,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_favorite" />
+                android:background="@drawable/ic_me_favorite" />
 
             <TextView
                 android:id="@+id/favorite_text"
@@ -186,7 +186,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/arrows" />
+                android:src="@drawable/bg_arrow" />
 
         </RelativeLayout>
 
@@ -211,7 +211,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_moments" />
+                android:background="@drawable/ic_me_moments" />
 
             <TextView
                 android:id="@+id/moments_text"
@@ -232,7 +232,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/arrows" />
+                android:src="@drawable/bg_arrow" />
         </RelativeLayout>
 
         <View
@@ -254,7 +254,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_card" />
+                android:background="@drawable/ic_me_card" />
 
             <TextView
                 android:id="@+id/card_text"
@@ -275,7 +275,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/arrows" />
+                android:src="@drawable/bg_arrow" />
 
         </RelativeLayout>
 
@@ -300,7 +300,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_emjio" />
+                android:background="@drawable/ic_me_emjio" />
 
             <TextView
                 android:id="@+id/emjio_text"
@@ -321,7 +321,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/arrows" />
+                android:src="@drawable/bg_arrow" />
 
         </RelativeLayout>
 
@@ -345,7 +345,7 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="14dp"
-                android:background="@drawable/bg_setting" />
+                android:background="@drawable/ic_me_setting" />
 
             <TextView
                 android:id="@+id/setting_text"
@@ -366,7 +366,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/arrows" />
+                android:src="@drawable/bg_arrow" />
 
         </RelativeLayout>
 

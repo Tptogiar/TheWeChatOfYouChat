@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/bg_qr_code" android:right="100dp"></item>
-    <item android:drawable="@drawable/arrows" android:left="100dp"></item>
+    <item android:drawable="@drawable/ic_me_code" android:right="100dp"></item>
+    <item android:drawable="@drawable/bg_arrow" android:left="100dp"></item>
 </layer-list>

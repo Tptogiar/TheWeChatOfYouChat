@@ -18,9 +18,9 @@
             android:id="@+id/youchat_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="微信"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="13dp"
+            android:text="微信"
             android:textColor="@color/black"
             android:textSize="18dp"
             android:textStyle="bold" />
@@ -29,22 +29,27 @@
             android:id="@+id/btn_add"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_alignTop="@id/youchat_text"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:layout_alignTop="@id/youchat_text"
-            android:background="@drawable/bg_youchat_add"
-            />
+            android:background="@drawable/bg_add" />
+
         <Button
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginRight="15dp"
             android:layout_alignTop="@id/youchat_text"
+            android:layout_marginRight="15dp"
             android:layout_toLeftOf="@id/btn_add"
-            android:background="@drawable/bg_youchat_search"
+            android:background="@drawable/bg_search"
 
-            >
-        </Button>
+            ></Button>
 
 
     </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chattingList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

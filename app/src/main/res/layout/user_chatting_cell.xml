@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:clickable="true"
+    android:background="@drawable/bg_user_cell">
+
+
+    <ImageView
+        android:id="@+id/userAvatars"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="15dp"
+        tools:srcCompat="@tools:sample/avatars"
+
+        />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/userAvatars"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@id/userAvatars"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/black"
+        android:text="userName" />
+
+    <TextView
+        android:id="@+id/userMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userName"
+        android:layout_alignLeft="@id/userName"
+        android:layout_marginTop="5dp"
+        android:text="message" />
+
+</RelativeLayout>
