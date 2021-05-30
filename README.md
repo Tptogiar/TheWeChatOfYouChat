@@ -7,8 +7,8 @@
 ![image](https://user-images.githubusercontent.com/79641956/120062484-1599e780-c095-11eb-8935-4ad242ad703e.png)
 ![image](https://user-images.githubusercontent.com/79641956/120056790-1a4ca480-c071-11eb-8e22-57414858f215.png)
 ![image](https://user-images.githubusercontent.com/79641956/120056791-1b7dd180-c071-11eb-99d3-e3d7d0df9037.png)
-![Screenshot_2021-05-29-22-08-01-924_com tptogiar youchat](https://user-images.githubusercontent.com/79641956/120090132-b5f21980-c132-11eb-8785-25e8b49eac00.jpg)
-![Screenshot_2021-05-29-22-06-45-599_com tptogiar youchat](https://user-images.githubusercontent.com/79641956/120090136-b8ed0a00-c132-11eb-8566-a8152cde30aa.jpg)
-![Screenshot_2021-05-29-22-07-56-882_com tptogiar youchat](https://user-images.githubusercontent.com/79641956/120090139-bab6cd80-c132-11eb-9bb7-8532234ea851.jpg)
+![image](https://user-images.githubusercontent.com/79641956/120090156-df12aa00-c132-11eb-9dc9-7834cc3a9ad7.png)
+![image](https://user-images.githubusercontent.com/79641956/120090166-f05bb680-c132-11eb-8d19-1cf2b3265b97.png)
+![image](https://user-images.githubusercontent.com/79641956/120090173-fd78a580-c132-11eb-82dc-a37c83f10800.png)
 ![image](https://user-images.githubusercontent.com/79641956/120056793-1c166800-c071-11eb-8682-f708cb6755aa.png)
 
